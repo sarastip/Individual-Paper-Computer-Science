@@ -47,6 +47,7 @@ for band in band_values:
 i = np.argmin(np.abs(np.array(t_values) - t))
 bands = band_values[i]
 
+
 signature_matrix_bands = np.array_split(signature_matrix, bands)
 candidates = []
 for band in signature_matrix_bands:
